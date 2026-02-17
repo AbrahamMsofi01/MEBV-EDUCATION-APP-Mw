@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MEBV EDUCATION</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>MEBV EDUCATION</h1>
+    <p>Free Educational Books Platform</p>
+</header>
+
+<!-- CATEGORY FILTER -->
+<div class="category-bar">
+    <select id="categoryFilter" onchange="loadBooks()">
+        <option value="All">All Categories</option>
+        <option value="Secondary">Secondary</option>
+        <option value="College">College</option>
+        <option value="Nursing">Nursing</option>
+    </select>
+</div>
+
+<!-- BOOK LIST -->
+<div id="bookList" class="book-list"></div>
+
+<!-- MODERN EDUCATION AD SECTION -->
+<section class="ad-section">
+    <div class="ad-content">
+        <h2>🎓 Boost Your Academic Success</h2>
+        <p>Access scholarships, online courses, revision materials and digital learning tools.</p>
+
+        <div class="adsense-box">
+            <!-- 🔥 INSERT GOOGLE ADSENSE CODE HERE -->
+            <p>Advertisement Space</p>
+        </div>
+
+        <button class="learn-btn">Explore Learning Opportunities</button>
+    </div>
+</section>
+
+<!-- FLOATING ADMIN BUTTON -->
+<button class="admin-btn" onclick="openLogin()">⚙</button>
+
+<!-- WHATSAPP CONTACT BUTTON -->
+<a href="https://wa.me/265897228943" target="_blank" class="whatsapp-float">
+    💬
+</a>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <h3>Admin Login</h3>
+        <input type="password" id="adminPass" placeholder="Enter Password">
+        <button onclick="checkLogin()">Login</button>
+    </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminPanel" class="admin-panel hidden">
+    <h2>Upload Book</h2>
+
+    <input type="text" id="title" placeholder="Book Title">
+
+    <select id="category">
+        <option value="Secondary">Secondary</option>
+        <option value="College">College</option>
+        <option value="Nursing">Nursing</option>
+    </select>
+
+    <input type="file" id="file">
+    <button onclick="uploadBook()">Upload Book</button>
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
