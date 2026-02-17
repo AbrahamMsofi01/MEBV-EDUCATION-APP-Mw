@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fc;
+}
+
+.header {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.category-bar {
+    text-align: center;
+    padding: 15px;
+}
+
+select, input, button {
+    padding: 12px;
+    margin: 8px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.book-list {
+    padding: 10px;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card h3 {
+    margin: 0 0 5px 0;
+}
+
+.book-card button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* AD SECTION */
+.ad-section {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.adsense-box {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px auto;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.learn-btn {
+    background: #ffca28;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    transform: scale(1.05);
+}
+
+/* FLOAT BUTTONS */
+.admin-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    margin: 25% auto;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.admin-panel {
+    text-align: center;
+    padding: 20px;
+}
